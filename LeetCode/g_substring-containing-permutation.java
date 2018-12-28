@@ -1,9 +1,18 @@
 // https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/
+/*
+Given two strings string1 and string2
+Find the smallest substring in string1 containing all characters of string2
+*/
+
 public class Solution {
     public static void main(String[] args) {
-
+        Solution.getShortestSubstring("full","tar");
     }
 
+    /*
+    Store the occurrence of characters of target string
+    Find the first window, then shift the window over until you find a smaller window
+    */
     public static int getShortestSubstring(String full, String target) {
         if(full.length() < target.length())
         return -1;
