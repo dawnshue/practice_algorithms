@@ -7,15 +7,15 @@ Expected time complexity is O(n)
 
 public class Solution {
     public static void main(String args[]) {
-        Solution.getLongestZeroSum({0, 0, 1, 0, 1, 1, 0});
+        Solution.getLongestZeroSum(new int[]{0, 0, 1, 0, 1, 1, 0});
     }
 
     /*
     Optimal solution: Time = n = O(n), Space = n + n = O(n)
     Create a sumLeft array
     Create a hashmap of earliest occurrence of sumLeft values
-    Can do the first two steps at the same time?
     Either find last occurrence of 0 sum or largest subarray where sumLeft[a] = sumLeft[b]
+    You may be able to solve with only one iteration over the array
     */
     public static int getLongestZeroSum(int[] input) {
         if(input.length == 0)

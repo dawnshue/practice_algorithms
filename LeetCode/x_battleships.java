@@ -13,7 +13,7 @@ public class Battleship {
         What would be the best way to store these coordinates?
         1. list of coordinates
         2. create a map of sum of battleships at each coordinate:
-        Will build it using n*m iterations, but retrieving will be O(n)
+        Will build it using n*m iterations, but retrieving will be O(1)
         Retrieving formula: Sum(x2,y2) - Sum(x1,y2) - Sum(x2,y1) + Sum(x1,y1)
         */
     }
